@@ -1,26 +1,13 @@
-import { Alert, AlertTitle, Box, Button, Collapse, Snackbar } from "@mui/material";
-import { useState } from "react";
-
-import AirlineSeatIndividualSuiteRoundedIcon from '@mui/icons-material/AirlineSeatIndividualSuiteRounded';
+import { PokeballIconSmall } from "../assets/pokeball";
+import { Box, Container, Typography } from "@mui/material";
 
 export default function Home() {
-
-    const [open, setOpen] = useState(false);
-
     return(
         <Box>
-            <h1> Home </h1>
-
-            <Button variant="contained" onClick={() => {setOpen(true)}}>Open</Button>
-
-            <Snackbar open={open} autoHideDuration={3000} onClose={() => setOpen(false)}>
-                <Collapse in={open}>
-                    <Alert security="success" icon={<AirlineSeatIndividualSuiteRoundedIcon/>}>
-                        <AlertTitle>Alerta</AlertTitle>
-                        Soy una alerta2</Alert>
-                </Collapse>
-            </Snackbar>
-
+            <Container sx={{ gap: 2, display: "flex", alignItems: "center", justifyContent: "center",  mt: 5}}>
+                <PokeballIconSmall />
+                <Typography component="span" sx={{ fontSize: 24, fontWeight: 700 }}> Pokedex </Typography>
+            </Container>
         </Box>
     )
 }
