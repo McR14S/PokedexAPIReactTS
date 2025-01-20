@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import { Box, Paper, Typography, CircularProgress } from "@mui/material";
 import { Link } from "react-router-dom";
-import { usePokemon } from "../hooks/usePokemon";
-import { background } from "../utils/Backgrounds";
+import { usePokemon } from "../../hooks/usePokemon";
+import { background } from "../../utils/Backgrounds";
 
 interface Props {
   url: string;
@@ -37,11 +37,11 @@ export const PokemonCard = ({ url }: Props) => {
         alignItems: "center",
         gap: 2,
         overflow: "hidden",
-        mt: 5,
+        mt: 3,
         textDecoration: "none",
         border: `2px solid ${backgroundSelected}`,
         "&:hover": {
-        boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.2)", // Sombra más prominente
+        boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.2)", 
         },
         borderRadius: 3,
         position: "relative",

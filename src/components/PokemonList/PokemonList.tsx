@@ -1,13 +1,11 @@
 import { Container, Grid2 } from '@mui/material'
-import { PokemonCard } from './PokemonCard';
+import { PokemonCard } from '../PokemonCard/PokemonCard';
 
 interface Props {
     pokemonsUrls?: string[] | null;
-    page?: number
-    perPage?: number
 }
 
-export const PokemonList = ({ pokemonsUrls, page, perPage }: Props) => {
+export const PokemonList = ({ pokemonsUrls }: Props) => {
   return (
     <>
         <Container sx={{ maxWidth: "1200px" }}>

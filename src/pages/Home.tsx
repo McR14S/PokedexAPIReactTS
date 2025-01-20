@@ -1,9 +1,10 @@
 import { Box, Container, Typography } from "@mui/material";
 import { PokeballIconSmall } from "../assets/pokeball";
-import { PokemonList } from "./PokemonList";
+import { PokemonList } from "../components/PokemonList/PokemonList";
 import { useContext, useState } from "react";
 import { PokemonContext } from "../context/PokemonContext";
 import Pagination from "@mui/material/Pagination";
+import { Filters } from "../components/Filters/Filters";
 
 export default function Home() {
     const { pokemonsFiltered } = useContext(PokemonContext);
@@ -28,6 +29,8 @@ export default function Home() {
                 <PokeballIconSmall />
                 <Typography component="span" sx={{ fontSize: 36, fontWeight: 700 , textShadow: "2px 2px 8px rgba(0, 0, 0, 0.3)",}}> Pokedex </Typography>
             </Container>
+            
+            <Filters/>
 
             <PokemonList pokemonsUrls={currentPokemons}/>
             
