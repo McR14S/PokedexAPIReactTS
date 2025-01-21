@@ -90,7 +90,7 @@ export default function ToDoList() {
         <Card>
             <Box sx={{ p: 4 }}>
                 <Typography variant="h4" gutterBottom>
-                    Notes
+                    Notas
                 </Typography>
 
                 <Tabs value={currentTab} onChange={(_, value) => setCurrentTab(value)}>
@@ -106,7 +106,7 @@ export default function ToDoList() {
                             name="title"
                             onChange={handleChange}
                             value={note.title}
-                            placeholder="Title"
+                            placeholder="Titulo"
                             fullWidth
                             margin="normal"
                             helperText={error.message}
@@ -116,7 +116,7 @@ export default function ToDoList() {
                             name="content"
                             onChange={handleChange}
                             value={note.content}
-                            placeholder="Take a Note..."
+                            placeholder="Toma una nota..."
                             fullWidth
                             multiline
                             minRows={3}

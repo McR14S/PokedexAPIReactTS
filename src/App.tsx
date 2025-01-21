@@ -8,14 +8,14 @@ import Home from "./pages/Home";
 import ToDoList from "./pages/ToDoList";
 import PokemonStore from "./pages/PokemonStore";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import InboxIcon from "@mui/icons-material/Inbox";
+import HomeIcon from '@mui/icons-material/Home';
+import SpeakerNotesIcon from '@mui/icons-material/SpeakerNotes';
+import CatchingPokemonTwoToneIcon from '@mui/icons-material/CatchingPokemonTwoTone';
 
 const navArrayLinks = [
-  { title: "Home", path: "/", icon: <InboxIcon/>},
-  { title: "Notes", path: "/toDoList", icon: <MenuIcon/>},
-  { title: "Pokemon Store", path: "/pokemonStore", icon: <MenuIcon/>},
-  { title: "Register", path: "/register", icon: <MenuIcon/>},
+  { title: "Inicio", path: "/", icon: <HomeIcon/>},
+  { title: "Notas", path: "/toDoList", icon: <SpeakerNotesIcon/>},
+  { title: "Tienda Pokemon", path: "/pokemonStore", icon: <CatchingPokemonTwoToneIcon/>},
 ]
 
 export default function App(){
